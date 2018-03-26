@@ -15,7 +15,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void gameStartButtonClicked(View view) {
         Story story = Story.fromTemplate();
-        Intent intent = new Intent(this, StoryActivity.class);
+        finish();
+        jumpToWordFillingActivity(story);
+    }
+
+    private void jumpToWordFillingActivity(Story story) {
+        Intent intent = new Intent(this, WordFillingActivity.class);
         intent.putExtra("Story", story);
         startActivity(intent);
     }
