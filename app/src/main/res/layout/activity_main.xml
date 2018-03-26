@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="60sp"
+    android:padding="10sp"
+    tools:context="red.aoi.madlibs.MainActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mad Libs"
+        android:textSize="40sp"
+        android:layout_gravity="top|center"
+        />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        android:paddingLeft="50sp"
+        android:paddingRight="50sp"
+        android:text="这是外国的一种填词游戏，玩法是在一段缺了词的文本中填上你自己喜欢的词，最后组成属于你自己的故事！没有唯一正确答案，随便你填。啊弄成中文太麻烦了我就直接用英文了哈。有空说不定会加啦。"
+        />
+
+    <android.support.v7.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:text="开始游戏"
+        android:onClick="gameStartButtonClicked"
+        />
+
+</android.support.v7.widget.LinearLayoutCompat>
