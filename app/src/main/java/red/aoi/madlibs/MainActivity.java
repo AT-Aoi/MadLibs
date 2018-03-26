@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import java.io.InputStream;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -14,14 +16,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void gameStartButtonClicked(View view) {
-        Story story = Story.fromTemplate();
+        InputStream storyStream = getResources().openRawResource(R.raw.madlib1);
+        Story story = Story.fromStream(storyStream);
         finish();
         jumpToWordFillingActivity(story);
     }
 
     private void jumpToWordFillingActivity(Story story) {
         Intent intent = new Intent(this, WordFillingActivity.class);
-        intent.putExtra("Story", story);
+        intent.putExtra("story", story);
         startActivity(intent);
     }
 }

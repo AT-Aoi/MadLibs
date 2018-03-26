@@ -19,11 +19,12 @@
         />
 
     <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/remainingWordCountHint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10sp"
         android:layout_gravity="center"
-        android:text="（还剩 2 个单词）"
+        android:text="@string/remainingWordCount"
         android:textSize="12sp"
         />
 
@@ -32,6 +33,7 @@
         android:layout_height="wrap_content">
 
         <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/fillingWordInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
